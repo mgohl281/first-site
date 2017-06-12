@@ -23,24 +23,29 @@ body {
     opacity: 0.8;
 }
 
-/* Home Page Carousel */
+/* Home Page Carousel  Aspect ratio 1920x800 or 1: 0.4166 
+this looks too tall -- need a wider image */
 
-header.carousel {
-    height: 50%;
+div.carousel {
+	width: 100vw;
+	height: 41.66vw;	
 }
 
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
+div.carousel .item,
+div.carousel .item.active,
+div.carousel .carousel-inner {
+    height: 100%;	
+	background-size: fill;
+	display: block;
+	margin: auto;
+	background-repeat: no-repeat;
+}
+
+div.carousel .fill {
     height: 100%;
+	background-size: contain;	
 }
 
-header.carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-}
 
 /* 404 Page Styles */
 
